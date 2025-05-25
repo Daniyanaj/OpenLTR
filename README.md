@@ -1,13 +1,11 @@
-# IOMatch for Open-Set Semi-Supervised Learning
-
 ## Introduction
 
-This is the official repository for our **ICCV 2023** paper:
+This is the official repository for our **ISBI 2025** paper:
 
-> **IOMatch: Simplifying Open-Set Semi-Supervised Learning with Joint Inliers and Outliers Utilization**</br>
-> Zekun Li, Lei Qi, Yinghuan Shi*, Yang Gao</br>
+> **Open-Set Semi-Supervised Learning for Long-Tailed Medical Datasets**</br>
+> Daniya Najiha, Jean Lahoud, Mustansar Fiaz, Amandeep Kumar, Hisham Cholakkal</br>
 
-[[`Paper`](https://arxiv.org/abs/2308.13168)] [[`Poster`]](./pubs/Poster.pdf) [[`Slides`]](./pubs/Slides.pdf) [[`Models and Logs`](https://drive.google.com/drive/folders/1pLU6tqxMls55CBRvCgZmDBfHLXm7jGMv?usp=sharing)] [[`BibTeX`](#citation)]
+[[`Paper`](https://arxiv.org/abs/2505.14846)]  [[`Models and Logs`](https://drive.google.com/drive/folders/1pLU6tqxMls55CBRvCgZmDBfHLXm7jGMv?usp=sharing)]]
 
 ## Preparation
 
@@ -16,7 +14,7 @@ This is the official repository for our **ICCV 2023** paper:
 We suggest first creating a conda environment:
 
 ```sh
-conda create --name iomatch python=3.8
+conda create --name openltr python=3.8
 ```
 
 then use pip to install required packages:
@@ -29,7 +27,7 @@ pip install -r requirements.txt
 
 Please put the datasets in the ``./data`` folder (or create soft links) as follows:
 ```
-IOMatch
+OpenLTR
 ├── config
     └── ...
 ├── data
