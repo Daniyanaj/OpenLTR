@@ -16,7 +16,7 @@ This is the official repository for our **ISBI 2025** paper.
 
 ## Results
 <p align="center">
-  <img src="MEDIA/result.png" alt="Architecture Figure" width="800">
+  <img src="MEDIA/res.png" alt="Result Figure" width="400">
 </p>
 
 ## Preparation
