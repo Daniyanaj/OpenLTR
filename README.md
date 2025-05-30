@@ -4,7 +4,7 @@ Daniya Najiha<sup>1</sup>, Jean Lahoud<sup>1</sup>, Mustansar Fiaz<sup>2</sup>, 
 Mohamed Bin Zayed University of Artificial Intelligence<sup>1</sup>, IBM Research<sup>2</sup>, Johns Hopkins University<sup>3</sup>
 
 This is the official repository for our **ISBI 2025** paper.
-[[`Paper`](https://arxiv.org/abs/2505.14846)]  [[`Models and Logs`](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/daniya_kareem_mbzuai_ac_ae/EmBQ6O44QIdDgtbo4-iKHjwBJN3wsilaT1CDBtLplyMICQ?e=vikozC)]]
+[[`Paper`](https://arxiv.org/abs/2505.14846)]  [[`Models and Logs`](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/daniya_kareem_mbzuai_ac_ae/EmBQ6O44QIdDgtbo4-iKHjwBJN3wsilaT1CDBtLplyMICQ?e=vikozC)]
 
 ## Preparation
 
@@ -43,7 +43,7 @@ OpenLTR
 └── ...  
 ```
 
-For the train-test splits of ISIC2018, we follow [ECL](https://github.com/zylbuaa/ECL)
+For the train-test splits of ISIC2018, we follow [ECL](https://github.com/zylbuaa/ECL).
 
 
 ### Training
