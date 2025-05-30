@@ -31,55 +31,34 @@ OpenLTR
 ├── config
     └── ...
 ├── data
-    ├── cifar10
-        └── cifar-10-batches-py
-    └── cifar100
-        └── cifar-100-python
-    └── imagenet30
-        └── filelist
-        └── one_class_test
-        └── one_class_train
-    └── ood_data
+    ├── ISIC2018
+        └── ISIC2018_Dataset
+             └── AK
+             └── BCC
+             └── ...
+     ├── ISIC2019
+        └── ISIC2019_Dataset
+            └── ....
 ├── semilearn
     └── ...
 └── ...  
 ```
 
-The data of ImageNet-30 can be downloaded in [one_class_train](https://drive.google.com/file/d/1B5c39Fc3haOPzlehzmpTLz6xLtGyKEy4/view) and [one_class_test](https://drive.google.com/file/d/13xzVuQMEhSnBRZr-YaaO08coLU2dxAUq/view).
+For the train-test splits of ISIC2018, we follow [ECL](https://github.com/zylbuaa/ECL)
 
-The out-of-dataset testing data for extended open-set evaluation can be downloaded in [this link](https://drive.google.com/drive/folders/1IjDLYfpfsMVuzf_NmqQPoHDH0KAd94gn?usp=sharing).
-
-## Usage
-
-We implement [IOMatch](./semilearn/algorithms/iomatch/iomatch.py) using the codebase of [USB](https://github.com/microsoft/Semi-supervised-learning).
 
 ### Training
 
-Here is an example to train IOMatch on CIFAR-100 with the seen/unseen split of "50/50" and 25 labels per seen class (*i.e.*, the task <u>CIFAR-50-1250</u> with 1250 labeled samples in total). 
+Here is an example to train OpenLTR on ISIC2018 with 25 % of data labels per seen class (*i.e.* with 1311 labeled samples in total). 
 
 ```sh
 # seed = 1
-CUDA_VISIBLE_DEVICES=0 python train.py --c config/openset_cv/iomatch/iomatch_cifar100_1250_1.yaml
-```
-
-Training IOMatch on other datasets with different OSSL settings can be specified by a config file:
-```sh
-# CIFAR10, seen/unseen split of 6/4, 25 labels per seen class (CIFAR-6-150), seed = 1  
-CUDA_VISIBLE_DEVICES=0 python train.py --c config/openset_cv/iomatch/iomatch_cifar10_150_1.yaml
-
-# CIFAR100, seen/unseen split of 50/50, 4 labels per seen class (CIFAR-50-200), seed = 1  
-CUDA_VISIBLE_DEVICES=0 python train.py --c config/openset_cv/iomatch/iomatch_cifar100_200_1.yaml
-
-# CIFAR100, seen/unseen split of 80/20, 4 labels per seen class (CIFAR-80-320), seed = 1    
-CUDA_VISIBLE_DEVICES=0 python train.py --c config/openset_cv/iomatch/iomatch_cifar100_320_1.yaml
-
-# ImageNet30, seen/unseen split of 20/10, 1% labeled data (ImageNet-20-p1), seed = 1  
-CUDA_VISIBLE_DEVICES=0 python train.py --c config/openset_cv/iomatch/iomatch_in30_p1_1.yaml
+CUDA_VISIBLE_DEVICES=0 python train.py --c config/openset_cv/openltr/isic2018.yaml
 ```
 
 ### Evaluation
 
-After training, the best checkpoints will be saved in ``./saved_models``. The closed-set performance has been reported in the training logs. For the open-set evaluation, please see [``evaluate.ipynb``](./evaluate.ipynb).
+After training, the best checkpoints will be saved in ``./saved_models``. The closed-set performance has been reported in the training logs. For the open-set evaluation, please see [``eval_io.py``](./eval_io.py).
 
 
 ## Acknowledgments
