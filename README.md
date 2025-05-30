@@ -5,7 +5,7 @@ This is the official repository for our **ISBI 2025** paper:
 > **Open-Set Semi-Supervised Learning for Long-Tailed Medical Datasets**</br>
 > Daniya Najiha, Jean Lahoud, Mustansar Fiaz, Amandeep Kumar, Hisham Cholakkal</br>
 
-[[`Paper`](https://arxiv.org/abs/2505.14846)]  [[`Models and Logs`](https://drive.google.com/drive/folders/1pLU6tqxMls55CBRvCgZmDBfHLXm7jGMv?usp=sharing)]]
+[[`Paper`](https://arxiv.org/abs/2505.14846)]  [[`Models and Logs`](https://mbzuaiac-my.sharepoint.com/:f:/g/personal/daniya_kareem_mbzuai_ac_ae/EmBQ6O44QIdDgtbo4-iKHjwBJN3wsilaT1CDBtLplyMICQ?e=vikozC)]]
 
 ## Preparation
 
